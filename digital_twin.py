@@ -2,51 +2,8 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 1,
-   "id": "7290ec7f-70eb-4275-b2b8-97fefbf77303",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Collecting pyserial\n",
-      "  Downloading pyserial-3.5-py2.py3-none-any.whl.metadata (1.6 kB)\n",
-      "Requirement already satisfied: matplotlib in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (3.10.8)\n",
-      "Requirement already satisfied: contourpy>=1.0.1 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (1.3.3)\n",
-      "Requirement already satisfied: cycler>=0.10 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (0.12.1)\n",
-      "Requirement already satisfied: fonttools>=4.22.0 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (4.61.1)\n",
-      "Requirement already satisfied: kiwisolver>=1.3.1 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (1.4.9)\n",
-      "Requirement already satisfied: numpy>=1.23 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (2.4.0)\n",
-      "Requirement already satisfied: packaging>=20.0 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (25.0)\n",
-      "Requirement already satisfied: pillow>=8 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (12.0.0)\n",
-      "Requirement already satisfied: pyparsing>=3 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (3.3.1)\n",
-      "Requirement already satisfied: python-dateutil>=2.7 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from matplotlib) (2.9.0.post0)\n",
-      "Requirement already satisfied: six>=1.5 in .\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)\n",
-      "Downloading pyserial-3.5-py2.py3-none-any.whl (90 kB)\n",
-      "Installing collected packages: pyserial\n",
-      "Successfully installed pyserial-3.5\n",
-      "Note: you may need to restart the kernel to use updated packages.\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "\n",
-      "[notice] A new release of pip is available: 26.0.1 -> 26.1.1\n",
-      "[notice] To update, run: python.exe -m pip install --upgrade pip\n"
-     ]
-    }
-   ],
-   "source": [
-    "pip install pyserial matplotlib"
-   ]
-  },
-  {
-   "cell_type": "code",
    "execution_count": null,
-   "id": "e7ff51ab-3328-4c24-96d4-a6dca66b1ed7",
+   "id": "c79b3b02-4267-49af-b867-b01ca0d86b13",
    "metadata": {},
    "outputs": [],
    "source": [
