@@ -214,3 +214,5 @@ This acts as the **Digital Twin Dashboard**.
 Developed as a Mini Project on:
 
 **Digital Twin Technology using Machine Learning and Arduino**
+BY Mrudhula , Sudarshan , Moksha , Skanda 
+
