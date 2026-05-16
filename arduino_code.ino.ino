@@ -1,29 +1,48 @@
-int flowSensor = A0;
-int waterSensor = A1;
+#include <Wire.h>
+#include <Adafruit_BMP085.h>
 
-int flowValue = 0;
-int waterValue = 0;
+Adafruit_BMP085 bmp;
+
+// Pins
+int flowSensor = A0;
+int leakSensor = A1;
 
 void setup() {
 
   Serial.begin(9600);
 
-  pinMode(13, OUTPUT);
+  if (!bmp.begin()) {
 
+    Serial.println("BMP180 not detected");
+
+    while (1);
+
+  }
+
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
 
-  flowValue = analogRead(flowSensor);
-  waterValue = analogRead(waterSensor);
+  // Read sensors
+  int flowValue = analogRead(flowSensor);
 
-  Serial.print("Flow: ");
+  int leakValue = analogRead(leakSensor);
+
+  float pressure = bmp.readPressure();
+
+  // Print values
+  Serial.print("Flow:");
   Serial.print(flowValue);
 
-  Serial.print(" Water: ");
-  Serial.println(waterValue);
+  Serial.print(" Leak:");
+  Serial.print(leakValue);
 
-  if(flowValue < 300 || waterValue < 300) {
+  Serial.print(" Pressure:");
+  Serial.println(pressure);
+
+  // Leak condition
+  if (leakValue < 150 || pressure < 90000) {
 
     digitalWrite(13, HIGH);
 
