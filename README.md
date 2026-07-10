@@ -40,27 +40,6 @@ using a trained **Random Forest Classifier**.
 
 ---
 
-# Required Python Libraries
-
-Install the required libraries using:
-
-```bash
-pip install pyserial pandas matplotlib scikit-learn
-```
-
----
-
-# Hardware Requirements
-
-* Arduino UNO/Nano
-* Flow Sensor
-* Pressure Sensor
-* Leak Detection Sensor
-* USB Cable
-* Laptop/PC
-
----
-
 # Project Structure
 
 ```plaintext
@@ -87,16 +66,6 @@ The project uses a **Random Forest Classifier** trained on sample sensor data.
 
 * `0` → Normal
 * `1` → Leak Detected
-
----
-
-# Expected Serial Data Format
-
-Arduino should send data in this format:
-
-```plaintext
-Flow:520 Leak:300 Pressure:100200
-```
 
 ---
 
@@ -132,50 +101,6 @@ Real-time graphs display:
 
 ---
 
-# Running the Project
-
-## Step 1
-
-Upload Arduino code to the board.
-
-## Step 2
-
-Connect Arduino to PC.
-
-## Step 3
-
-Check Arduino COM port.
-
-Example:
-
-```python
-arduino = serial.Serial('COM8',9600)
-```
-
-Change `COM8` if needed.
-
-## Step 4
-
-Run the Python file:
-
-```bash
-python digital_twin.py
-```
-
----
-
-# Output Example
-
-```plaintext
-Flow:520 Leak:300 Pressure:100200
-✅ NORMAL
-
-Flow:180 Leak:70 Pressure:87000
-⚠ LEAK DETECTED
-```
-
----
-
 # Graph Visualization
 
 The system displays a live graph for:
@@ -185,16 +110,6 @@ The system displays a live graph for:
 * Pressure Sensor
 
 This acts as the **Digital Twin Dashboard**.
-
----
-
-# Applications
-
-* Smart Pipeline Monitoring
-* Oil & Gas Industry
-* Water Distribution Systems
-* Industrial Automation
-* IoT-based Monitoring
 
 ---
 
